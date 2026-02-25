@@ -41,10 +41,11 @@ if not exist "%USERPROFILE%\.nanobot\config.json" (
 )
 
 echo.
-echo [SUCCESS] Everything is ready. Starting Nanobot Agent...
+echo [SUCCESS] Everything is ready.
+echo [INFO] Opening Web Dashboard at http://localhost:8080
 echo.
 
-:: Run the agent
-nanobot agent
+:: Start the core which includes the Web Dashboard and Configuration Panel
+python nanobot_core.py
 
 pause
