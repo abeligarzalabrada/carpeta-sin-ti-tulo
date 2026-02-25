@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "new_tool": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "fake-mcp-server"
+            ]
+        }
+    }
+}
